@@ -3,21 +3,14 @@ package com.example.myprofilelayouts
 import androidx.recyclerview.widget.DiffUtil
 import com.example.myprofilelayouts.model.User
 
-class UserDiffCallback(
-    private val oldList: List<User>,
-    private val newList: List<User>
-) : DiffUtil.Callback() {
+class UserDiffCallback() : DiffUtil.ItemCallback<User>() {
 
-    override fun getOldListSize() = oldList.size
-
-    override fun getNewListSize() = newList.size
-
-    override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-        return oldList[oldItemPosition].id == newList[newItemPosition].id
+    override fun areItemsTheSame(oldItem: User, newItem: User): Boolean {
+        return oldItem == newItem
     }
 
-    override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-        return oldList[oldItemPosition] == newList[newItemPosition]
+    override fun areContentsTheSame(oldItem: User, newItem: User): Boolean {
+        return oldItem == newItem
     }
 
 }

@@ -21,8 +21,11 @@ class RecyclerViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityRecyclerviewBinding.inflate(layoutInflater)
-        binding.recyclerView.setHasFixedSize(true)
         setContentView(binding.root)
+        binding.recyclerView.setHasFixedSize(true)
+        binding.addContacts.setOnClickListener() {
+            addContacts()
+        }
 
         service = UsersService()
         adapter = UsersAdapter(service.getUsers())
@@ -47,8 +50,11 @@ class RecyclerViewActivity : AppCompatActivity() {
 
     private fun updateUsers(usersLiveData: LiveData<List<User>>) {
         usersLiveData.observe(this, Observer { users ->
-            users?.let {
+            users?.let { //userList: List<User> ->
+                adapter.submitList(users)
+
                 adapter.swap(users)
+
             }
         })
     }
@@ -61,7 +67,7 @@ class RecyclerViewActivity : AppCompatActivity() {
         toast.show()
     }
 
-    fun addContacts(view: View) {
+    private fun addContacts() {
         val dialog = UserDialog.newInstance()
         dialog.show(supportFragmentManager, UserDialog.TAG)
     }

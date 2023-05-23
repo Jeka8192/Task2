@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.contacts.setOnClickListener() {
+            contacts()
+        }
 
         val arguments: Bundle? = intent.extras
         binding.name.text = extractName(arguments)
@@ -52,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         return userName
     }
 
-    fun contacts(view: View) {
+    private fun contacts() {
         val intent = Intent(this, RecyclerViewActivity::class.java)
         startActivity(intent)
         overridePendingTransition(R.anim.right, R.anim.left)

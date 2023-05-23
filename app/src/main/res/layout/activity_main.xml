@@ -116,7 +116,6 @@
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:layout_marginBottom="@dimen/padding_between_elements"
         android:backgroundTint="@color/orange"
-        android:onClick="contacts"
         android:text="@string/view_my_contacts"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

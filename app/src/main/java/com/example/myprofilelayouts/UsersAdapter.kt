@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.myprofilelayouts.databinding.ActivityUserBinding
@@ -13,7 +14,7 @@ import com.example.myprofilelayouts.model.User
 private const val TAG = "UsersAdapter"
 
 class UsersAdapter(usersLiveData: LiveData<List<User>>) :
-    RecyclerView.Adapter<UsersAdapter.UsersViewHolder>() {
+    ListAdapter<User, UsersAdapter.UsersViewHolder>(UserDiffCallback()) {
 
     private lateinit var listener: OnItemClickListener
 
@@ -42,8 +43,6 @@ class UsersAdapter(usersLiveData: LiveData<List<User>>) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UsersViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = ActivityUserBinding.inflate(inflater, parent, false)
-
-
         return UsersViewHolder(binding, this.listener)
     }
 
@@ -68,10 +67,7 @@ class UsersAdapter(usersLiveData: LiveData<List<User>>) :
     override fun getItemCount() = users.size
 
     fun swap(users: List<User>) {
-        val diffCallback = UserDiffCallback(this.users, users)
-        val diffResult = DiffUtil.calculateDiff(diffCallback)
         this.users = users
-        diffResult.dispatchUpdatesTo(this)
     }
 
 }
