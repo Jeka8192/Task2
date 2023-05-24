@@ -75,7 +75,7 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/or"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/remember_me"
@@ -95,8 +95,12 @@
         android:layout_marginStart="@dimen/margin_on_the_edges"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:layout_marginBottom="@dimen/padding_between_elements"
+        android:hint="@string/password"
         android:textColorHint="@color/white_gray"
         app:errorEnabled="true"
+        app:expandedHintEnabled="false"
+        app:helperText=""
+        app:helperTextTextColor="@color/red"
         app:hintTextColor="@color/white_gray"
         app:layout_constraintBottom_toTopOf="@id/remember_me"
         app:layout_constraintStart_toStartOf="parent">
@@ -105,7 +109,6 @@
             android:id="@+id/password_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"
             android:inputType="textPassword"
             android:singleLine="true"
             android:textColor="@color/white_gray" />
@@ -118,10 +121,12 @@
         android:layout_marginStart="@dimen/margin_on_the_edges"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:layout_marginBottom="@dimen/padding_between_elements"
+        android:hint="@string/email"
         android:textColorHint="@color/white_gray"
         app:errorEnabled="true"
+        app:expandedHintEnabled="false"
         app:helperText=""
-        app:helperTextTextColor="@color/white"
+        app:helperTextTextColor="@color/red"
         app:hintTextColor="@color/white_gray"
         app:layout_constraintBottom_toTopOf="@id/password"
         app:layout_constraintStart_toStartOf="parent">
@@ -130,7 +135,6 @@
             android:id="@+id/email_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:singleLine="true"
             android:textColor="@color/white_gray" />

@@ -15,7 +15,6 @@ class UserDialog : DialogFragment() {
 
     companion object {
         const val TAG = "UserDialog"
-
         fun newInstance(): UserDialog {
             return UserDialog()
         }

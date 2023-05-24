@@ -10,12 +10,11 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myprofilelayouts.databinding.ActivityRecyclerviewBinding
 import com.example.myprofilelayouts.model.User
-import com.example.myprofilelayouts.model.UsersService
 
 class RecyclerViewActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRecyclerviewBinding
     private lateinit var adapter: UsersAdapter
-    private lateinit var service: UsersService
+    private val userRepository = UserRepository.get()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,13 +26,12 @@ class RecyclerViewActivity : AppCompatActivity() {
             addContacts()
         }
 
-        service = UsersService()
-        adapter = UsersAdapter(service.getUsers())
+        adapter = UsersAdapter(userRepository.getUsers())
 
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = adapter
 
-        updateUsers(service.getUsers())
+        updateUsers(userRepository.getUsers())
         clickBasket()
     }
 
@@ -41,7 +39,7 @@ class RecyclerViewActivity : AppCompatActivity() {
         adapter.setOnItemClickListener(object : UsersAdapter.OnItemClickListener {
             override fun onItemClick(position: Int, item: View) {
                 if (position >= 0) {
-                    service.deleteUsers(adapter.users[position])
+                    userRepository.deleteUsers(adapter.users[position])
                     showToast()
                 }
             }
@@ -50,11 +48,9 @@ class RecyclerViewActivity : AppCompatActivity() {
 
     private fun updateUsers(usersLiveData: LiveData<List<User>>) {
         usersLiveData.observe(this, Observer { users ->
-            users?.let { //userList: List<User> ->
+            users?.let {
                 adapter.submitList(users)
-
-                adapter.swap(users)
-
+                adapter.users = users
             }
         })
     }

@@ -2,7 +2,6 @@ package com.example.myprofilelayouts
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myprofilelayouts.databinding.ActivityMainBinding
 import java.util.*
@@ -60,5 +59,4 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
         overridePendingTransition(R.anim.right, R.anim.left)
     }
-
 }
