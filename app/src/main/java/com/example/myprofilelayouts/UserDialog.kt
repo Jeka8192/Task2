@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.DialogFragment
 import com.example.myprofilelayouts.model.User
 
@@ -33,21 +34,25 @@ class UserDialog : DialogFragment() {
         setupClickListeners(view)
     }
 
+    override fun getTheme(): Int {
+        return R.style.DialogTheme
+    }
+
     override fun onStart() {
         super.onStart()
         dialog?.window?.setLayout(
             WindowManager.LayoutParams.MATCH_PARENT,
-            WindowManager.LayoutParams.WRAP_CONTENT
+            WindowManager.LayoutParams.MATCH_PARENT
         )
     }
 
     private fun setupClickListeners(view: View) {
-        val button: Button = view.findViewById(R.id.addUserContacts)
+        val button: Button = view.findViewById(R.id.save)
         button.setOnClickListener {
-            val photoEditText: EditText? = dialog?.findViewById(R.id.photo_text)
-            val nameEditText: EditText? = dialog?.findViewById(R.id.name_text)
-            val professionEditText: EditText? = dialog?.findViewById(R.id.profession_text)
-            val addressEditText: EditText? = dialog?.findViewById(R.id.address_text)
+            val photoEditText: EditText? = dialog?.findViewById(R.id.user_name_text)
+            val nameEditText: EditText? = dialog?.findViewById(R.id.user_name_text)
+            val professionEditText: EditText? = dialog?.findViewById(R.id.user_name_text)
+            val addressEditText: EditText? = dialog?.findViewById(R.id.user_name_text)
 
             val user = User(
                 id = null,

@@ -1,5 +1,17 @@
 <resources>
-    <dimen name="margin_on_the_edges">15dp</dimen>
+    <dimen name="margin_on_the_edges">16dp</dimen>
+
+
+
+    <dimen name="between_view_and_input_fields">0dp</dimen>
+    <dimen name="padding_between_elements_dialog">8dp</dimen>
+    <dimen name="field_height_water">57dp</dimen>
+
+
+    <dimen name="input_text">24sp</dimen>
+    <dimen name="hint_text">18sp</dimen>
+
+
     <dimen name="padding_between_elements">10dp</dimen>
     <dimen name="profession">18sp</dimen>
     <dimen name="address">18sp</dimen>

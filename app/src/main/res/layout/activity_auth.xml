@@ -100,8 +100,7 @@
         app:errorEnabled="true"
         app:expandedHintEnabled="false"
         app:helperText=""
-        app:helperTextTextColor="@color/red"
-        app:hintTextColor="@color/white_gray"
+        app:helperTextTextColor="@color/red_error"
         app:layout_constraintBottom_toTopOf="@id/remember_me"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -115,19 +114,18 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email"
+        android:id="@+id/e_mail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_on_the_edges"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:layout_marginBottom="@dimen/padding_between_elements"
-        android:hint="@string/email"
+        android:hint="@string/e_mail"
         android:textColorHint="@color/white_gray"
         app:errorEnabled="true"
         app:expandedHintEnabled="false"
         app:helperText=""
         app:helperTextTextColor="@color/red"
-        app:hintTextColor="@color/white_gray"
         app:layout_constraintBottom_toTopOf="@id/password"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -147,7 +145,7 @@
         android:layout_marginBottom="@dimen/profile_marginBottom"
         android:text="@string/profile"
         android:textColor="@color/white_gray"
-        app:layout_constraintBottom_toTopOf="@id/email"
+        app:layout_constraintBottom_toTopOf="@id/e_mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

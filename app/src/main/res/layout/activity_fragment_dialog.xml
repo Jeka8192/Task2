@@ -4,125 +4,186 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/userDialog"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="?android:attr/selectableItemBackground">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/photo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_on_the_edges"
-        android:layout_marginEnd="@dimen/margin_on_the_edges"
-        android:layout_marginBottom="@dimen/padding_between_elements"
-        android:textColorHint="@color/white_gray"
-        app:errorEnabled="true"
-        app:helperText=""
-        app:helperTextTextColor="@color/white"
-        app:hintTextColor="@color/white_gray"
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="212dp"
+        android:background="@color/view_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_water"
+        android:layout_marginStart="@dimen/margin_on_the_edges"
+        android:layout_marginTop="@dimen/between_view_and_input_fields"
+        android:layout_marginEnd="@dimen/margin_on_the_edges"
+        android:hint="@string/add_username"
+        android:textColorHint="@color/white_gray"
+        app:errorEnabled="true"
+        app:expandedHintEnabled="false"
+        app:helperText=""
+        app:helperTextTextColor="@color/red_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/photo_text"
+            android:id="@+id/user_name_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/photo"
             android:inputType="text"
             android:singleLine="true"
-            android:textColor="@color/white_gray" />
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/name"
+        android:id="@+id/career"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/field_height_water"
         android:layout_marginStart="@dimen/margin_on_the_edges"
+        android:layout_marginTop="@dimen/between_view_and_input_fields"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
-        android:layout_marginBottom="@dimen/padding_between_elements"
+        android:hint="@string/add_career"
         android:textColorHint="@color/white_gray"
         app:errorEnabled="true"
+        app:expandedHintEnabled="false"
         app:helperText=""
-        app:helperTextTextColor="@color/white"
-        app:hintTextColor="@color/white_gray"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:helperTextTextColor="@color/red_error"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/photo">
+        app:layout_constraintTop_toBottomOf="@id/user_name">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name_text"
+            android:id="@+id/career_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/user_name"
             android:inputType="text"
             android:singleLine="true"
-            android:textColor="@color/white_gray" />
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/profession"
+        android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/field_height_water"
         android:layout_marginStart="@dimen/margin_on_the_edges"
+        android:layout_marginTop="@dimen/between_view_and_input_fields"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
-        android:layout_marginBottom="@dimen/padding_between_elements"
+        android:hint="@string/add_email"
         android:textColorHint="@color/white_gray"
         app:errorEnabled="true"
+        app:expandedHintEnabled="false"
         app:helperText=""
-        app:helperTextTextColor="@color/white"
-        app:hintTextColor="@color/white_gray"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:helperTextTextColor="@color/red_error"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/name">
+        app:layout_constraintTop_toBottomOf="@id/career">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/profession_text"
+            android:id="@+id/email_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/user_profession"
             android:inputType="text"
             android:singleLine="true"
-            android:textColor="@color/white_gray" />
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/input_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_water"
+        android:layout_marginStart="@dimen/margin_on_the_edges"
+        android:layout_marginTop="@dimen/between_view_and_input_fields"
+        android:layout_marginEnd="@dimen/margin_on_the_edges"
+        android:hint="@string/add_phone"
+        android:textColorHint="@color/white_gray"
+        app:errorEnabled="true"
+        app:expandedHintEnabled="false"
+        app:helperText=""
+        app:helperTextTextColor="@color/red_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/address"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/field_height_water"
         android:layout_marginStart="@dimen/margin_on_the_edges"
+        android:layout_marginTop="@dimen/between_view_and_input_fields"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
-        android:layout_marginBottom="@dimen/padding_between_elements"
+        android:hint="@string/add_address"
         android:textColorHint="@color/white_gray"
         app:errorEnabled="true"
+        app:expandedHintEnabled="false"
         app:helperText=""
-        app:helperTextTextColor="@color/white"
-        app:hintTextColor="@color/white_gray"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:helperTextTextColor="@color/red_error"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profession">
+        app:layout_constraintTop_toBottomOf="@id/phone">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/address_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/user_address"
             android:inputType="text"
             android:singleLine="true"
-            android:textColor="@color/white_gray" />
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/input_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_of_birth"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_water"
+        android:layout_marginStart="@dimen/margin_on_the_edges"
+        android:layout_marginTop="@dimen/between_view_and_input_fields"
+        android:layout_marginEnd="@dimen/margin_on_the_edges"
+        android:hint="@string/add_date_of_birth"
+        android:textColorHint="@color/white_gray"
+        app:errorEnabled="true"
+        app:expandedHintEnabled="false"
+        app:helperText=""
+        app:helperTextTextColor="@color/red_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date_of_birth_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/addUserContacts"
+        android:id="@+id/save"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_marginStart="@dimen/margin_on_the_edges"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
-        android:layout_marginBottom="@dimen/padding_between_elements"
-        android:background="@drawable/back_orange"
+        android:layout_marginBottom="@dimen/margin_on_the_edges"
+        android:backgroundTint="@color/orange"
         android:text="@string/save"
-        android:textColor="@color/white_gray"
+        android:textSize="@dimen/input_text"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/address" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

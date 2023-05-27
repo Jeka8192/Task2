@@ -29,9 +29,9 @@ class AuthActivity : AppCompatActivity() {
         val password: String = passwordExtraction()
 
         if (mail == incorrectEntry) {
-            binding.email.helperText = incorrectEntry
+            binding.eMail.helperText = incorrectEntry
         } else {
-            binding.email.helperText = ""
+            binding.eMail.helperText = ""
         }
 
         if (password == incorrectEntry) {
@@ -43,7 +43,7 @@ class AuthActivity : AppCompatActivity() {
         if (mail != incorrectEntry && password != incorrectEntry) {
             createIntentMainActivity(mail)
         }
-        //createIntentMainActivity(mail)
+        createIntentMainActivity(mail)
     }
 
     private fun createIntentMainActivity(mail: String) {
