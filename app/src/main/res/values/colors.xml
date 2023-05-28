@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FFFF0000</color>
 
+    <color name="gray">#FF828282</color>
     <color name="orange">#FFFB5E06</color>
     <color name="red_error">#FFF93E3E</color>
     <color name="black_gray">#FF18181F</color>

@@ -7,7 +7,7 @@
     <string name="view_my_contacts">VIEW MY CONTACTS</string>
     <string name="edit_profile">Edit profile</string>
     <string name="account">Already hav an account?   Sign in</string>
-    <string name="conditions">By clicking Register you agree to our Terms\nand Conditions</string>
+    <string name="conditions">By clicking Register you agree to our Terms and Conditions</string>
     <string name="register">REGISTER</string>
     <string name="or">or</string>
     <string name="google">GOOGLE</string>
@@ -18,20 +18,21 @@
     <string name="contacts">Contacts</string>
     <string name="add_contacts">Add contacts</string>
     <string name="photo">Photo</string>
-    <string name="e_mail"><font size="18">E-mail</font></string>
+    <string name="e_mail">E-mail</string>
     <string name="user_name">Name</string>
     <string name="user_profession">Profession</string>
     <string name="user_address">Address</string>
     <string name="add_user_contacts">Add contacts</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="save">Save</string>
+    <string name="save">SAVE</string>
 
-    <string name="add_username"><font size="18">Username</font></string>
-    <string name="add_career"><font size="18">Career</font></string>
-    <string name="add_email"><font size="18">Email</font></string>
+    <string name="add_username">Username</string>
+    <string name="add_career">Career</string>
+    <string name="add_email">Email</string>
     <string name="add_phone">Phone</string>
     <string name="add_address">Address</string>
     <string name="add_date_of_birth">Date of birth</string>
+    <string name="add_contact">Add contact</string>
 
 </resources>

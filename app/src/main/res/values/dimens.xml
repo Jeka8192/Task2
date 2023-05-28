@@ -3,13 +3,20 @@
 
 
 
-    <dimen name="between_view_and_input_fields">0dp</dimen>
+    <dimen name="between_view_and_input_fields">24dp</dimen>
     <dimen name="padding_between_elements_dialog">8dp</dimen>
     <dimen name="field_height_water">57dp</dimen>
+    <dimen name="back_top">20dp</dimen>
+    <dimen name="back_start">17dp</dimen>
+    <dimen name="photo_user_top">28dp</dimen>
+    <dimen name="photo_button">24dp</dimen>
+    <dimen name="photo_user">113dp</dimen>
 
 
-    <dimen name="input_text">24sp</dimen>
+
+    <dimen name="input_text">23sp</dimen>
     <dimen name="hint_text">18sp</dimen>
+    <dimen name="save_text">24sp</dimen>
 
 
     <dimen name="padding_between_elements">10dp</dimen>

@@ -92,16 +92,16 @@
         android:layout_height="wrap_content"
         android:src="@drawable/instagram"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/vkontakte"
+        app:layout_constraintEnd_toStartOf="@id/in"
         app:layout_constraintStart_toEndOf="@id/facebook"
         app:layout_constraintTop_toBottomOf="@id/view"
         app:layout_constraintVertical_bias="0.2" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/vkontakte"
+        android:id="@+id/in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/vkontakte"
+        android:src="@drawable/in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/instagram"
