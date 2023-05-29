@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/back_top"
         android:text="@string/add_contact"
-        android:textColor="@color/white_gray"
+        android:textColor="@color/white_grey_light"
         android:textSize="@dimen/input_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +66,7 @@
         android:layout_marginTop="@dimen/between_view_and_input_fields"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:hint="@string/add_username"
-        android:textColorHint="@color/white_gray"
+        android:textColorHint="@color/white_grey"
         app:errorEnabled="true"
         app:expandedHintEnabled="false"
         app:helperText=""
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:singleLine="true"
-            android:textColor="@color/black_gray"
+            android:textColor="@color/black_grey"
             android:textSize="@dimen/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,7 +92,7 @@
         android:layout_marginTop="@dimen/between_view_and_input_fields"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:hint="@string/add_career"
-        android:textColorHint="@color/white_gray"
+        android:textColorHint="@color/white_grey"
         app:errorEnabled="true"
         app:expandedHintEnabled="false"
         app:helperText=""
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:singleLine="true"
-            android:textColor="@color/black_gray"
+            android:textColor="@color/black_grey"
             android:textSize="@dimen/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -118,7 +118,7 @@
         android:layout_marginTop="@dimen/between_view_and_input_fields"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:hint="@string/add_email"
-        android:textColorHint="@color/white_gray"
+        android:textColorHint="@color/white_grey"
         app:errorEnabled="true"
         app:expandedHintEnabled="false"
         app:helperText=""
@@ -132,7 +132,7 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:singleLine="true"
-            android:textColor="@color/black_gray"
+            android:textColor="@color/black_grey"
             android:textSize="@dimen/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -144,7 +144,7 @@
         android:layout_marginTop="@dimen/between_view_and_input_fields"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:hint="@string/add_phone"
-        android:textColorHint="@color/white_gray"
+        android:textColorHint="@color/white_grey"
         app:errorEnabled="true"
         app:expandedHintEnabled="false"
         app:helperText=""
@@ -158,7 +158,7 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:singleLine="true"
-            android:textColor="@color/black_gray"
+            android:textColor="@color/black_grey"
             android:textSize="@dimen/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -170,7 +170,7 @@
         android:layout_marginTop="@dimen/between_view_and_input_fields"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:hint="@string/add_address"
-        android:textColorHint="@color/white_gray"
+        android:textColorHint="@color/white_grey"
         app:errorEnabled="true"
         app:expandedHintEnabled="false"
         app:helperText=""
@@ -184,7 +184,7 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:singleLine="true"
-            android:textColor="@color/black_gray"
+            android:textColor="@color/black_grey"
             android:textSize="@dimen/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -196,7 +196,7 @@
         android:layout_marginTop="@dimen/between_view_and_input_fields"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:hint="@string/add_date_of_birth"
-        android:textColorHint="@color/white_gray"
+        android:textColorHint="@color/white_grey"
         app:errorEnabled="true"
         app:expandedHintEnabled="false"
         app:helperText=""
@@ -210,7 +210,7 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:singleLine="true"
-            android:textColor="@color/black_gray"
+            android:textColor="@color/black_grey"
             android:textSize="@dimen/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
