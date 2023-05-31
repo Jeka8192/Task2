@@ -40,7 +40,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/register"
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="@dimen/button_height"
         android:layout_marginStart="@dimen/margin_on_the_edges"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:layout_marginBottom="@dimen/margin_on_the_edges"
@@ -68,7 +68,7 @@
     <com.example.myprofilelayouts.customview.MyButtonView
         android:id="@+id/google"
         android:layout_width="0dp"
-        android:layout_height="@dimen/google_height"
+        android:layout_height="@dimen/button_height_2"
         android:layout_marginStart="@dimen/margin_on_the_edges"
         android:layout_marginEnd="@dimen/margin_on_the_edges"
         android:layout_marginBottom="@dimen/padding_between_elements"

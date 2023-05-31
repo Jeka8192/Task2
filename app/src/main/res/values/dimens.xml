@@ -10,12 +10,21 @@
     <dimen name="photo_user_top">28dp</dimen>
     <dimen name="photo_button">24dp</dimen>
     <dimen name="photo_user">113dp</dimen>
+    <dimen name="button_height">55dp</dimen>
+    <dimen name="button_height_2">40dp</dimen>
+    <dimen name="social_media_element_top">62dp</dimen>
+    <dimen name="social_media_element_start_end">58dp</dimen>
+
+
 
 
 
     <dimen name="input_text">23sp</dimen>
-    <dimen name="hint_text">18sp</dimen>
+    <dimen name="edit_text">18sp</dimen>
     <dimen name="save_text">24sp</dimen>
+    <dimen name="view_my_contacts_text">16sp</dimen>
+    <dimen name="contacts_text">24sp</dimen>
+
 
 
     <dimen name="padding_between_elements">8dp</dimen>
@@ -27,9 +36,10 @@
     <dimen name="sign_in">14sp</dimen>
     <dimen name="conditions">14sp</dimen>
     <dimen name="or">20sp</dimen>
-    <dimen name="google_height">40dp</dimen>
+
     <dimen name="remember_me_marginBottom">56dp</dimen>
     <dimen name="profile_marginBottom">30dp</dimen>
+
     <dimen name="acquainted_marginBottom">5dp</dimen>
     <dimen name="acquainted_textSize">30sp</dimen>
 </resources>
