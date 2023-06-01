@@ -1,39 +1,37 @@
 <resources>
-    <string name="app_name">Макеты моего профиля</string>
-    <string name="settings">Настройки</string>
+    <string name="app_name">Макети мого профілю</string>
+    <string name="settings">Налаштування</string>
     <string name="address">5295 Gaylord Walks Apk. 110</string>
-    <string name="name">Smith Alvarado</string>
-    <string name="profession">Графический дизайнер</string>
-    <string name="view_my_contacts">ПРОСМОТРЕТЬ МОИ КОНТАКТЫ</string>
-    <string name="edit_profile">Изменить профиль</string>
-    <string name="account">У вас уже есть учетная запись?   Войти</string>
-    <string name="conditions">Нажимая "Зарегистрироваться", вы соглашаетесь с нашими Условиями\nи Условиями</string>
-    <string name="register">РЕГИСТРАЦИЯ</string>
-    <string name="or">или</string>
+    <string name="name">Сміт Альварадо</string>
+    <string name="profession">Графічний дизайнер</string>
+    <string name="view_my_contacts">ПЕРЕГЛЯНУТИ МОЇ КОНТАКТИ</string>
+    <string name="edit_profile">Редагувати профіль</string>
+    <string name="account">Вже є аккаунт? Увійти</string>
+    <string name="conditions">Натиснувши «Зареєструватися», ви погоджуєтеся з нашими положеннями та умовами</string>
+    <string name="register">ЗАРЕЄСТРУВАТИСЯ</string>
+    <string name="or">або</string>
     <string name="google">GOOGLE</string>
-    <string name="remember_me">Запомнить меня</string>
+    <string name="remember_me">Пам\'ятай мене</string>
     <string name="password">Пароль</string>
+    <string name="profile">Заповнюйте профіль і переходьте до заявки!</string>
+    <string name="acquainted">Давайте знайомитись</string>
+    <string name="contacts">Контакти</string>
+    <string name="add_contacts">Додайте контакти</string>
+    <string name="photo">Фото</string>
     <string name="e_mail">E-mail</string>
-    <string name="profile">Заполните профиль и перейдите в приложение!</string>
-    <string name="acquainted">Давайте знакомиться</string>
-    <string name="contacts">Contacts</string>
-    <string name="add_contacts">Add contacts</string>
-    <string name="photo">Photo</string>
-    <string name="user_name">Name</string>
-    <string name="user_profession">Profession</string>
-    <string name="user_address">Address</string>
-    <string name="add_user_contacts">Add contacts</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="save">SAVE</string>
+    <string name="user_name">Ім\'я</string>
+    <string name="user_profession">Професія</string>
+    <string name="user_address">Адреса</string>
+    <string name="add_user_contacts">Додайте контакти</string>
+    <string name="hello_blank_fragment">Привіт пустий фрагмент</string>
+    <string name="save">ЗБЕРЕГТИ</string>
 
-
-    <string name="add_username">Username</string>
-    <string name="add_career">Career</string>
+    <string name="add_username">Ім\'я користувача</string>
+    <string name="add_career">Кар\'єра</string>
     <string name="add_email">Email</string>
-    <string name="add_phone">Phone</string>
-    <string name="add_address">Address</string>
-    <string name="add_date_of_birth">Date of birth</string>
-    <string name="add_contact">Add contact</string>
+    <string name="add_phone">Телефон</string>
+    <string name="add_address">Адреса</string>
+    <string name="add_date_of_birth">Дата народження</string>
+    <string name="add_contact">Додати контакт</string>
 
 </resources>

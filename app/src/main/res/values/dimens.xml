@@ -14,6 +14,17 @@
     <dimen name="button_height_2">40dp</dimen>
     <dimen name="social_media_element_top">62dp</dimen>
     <dimen name="social_media_element_start_end">58dp</dimen>
+    <dimen name="add_contacts_bottom">26dp</dimen>
+    <dimen name="basket_end">14dp</dimen>
+    <dimen name="profession_element_start">16dp</dimen>
+    <dimen name="profession_element_bottom">14dp</dimen>
+    <dimen name="view_height">212dp</dimen>
+
+
+    <dimen name="photo_user_size">50dp</dimen>
+    <dimen name="photo_user_start">8dp</dimen>
+    <dimen name="user_element_start">16dp</dimen>
+    <dimen name="user_element_size">66dp</dimen>
 
 
 
@@ -24,6 +35,9 @@
     <dimen name="save_text">24sp</dimen>
     <dimen name="view_my_contacts_text">16sp</dimen>
     <dimen name="contacts_text">24sp</dimen>
+    <dimen name="profession_text">12sp</dimen>
+    <dimen name="name_text">18sp</dimen>
+
 
 
 

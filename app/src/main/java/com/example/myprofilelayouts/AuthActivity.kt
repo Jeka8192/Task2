@@ -43,7 +43,6 @@ class AuthActivity : AppCompatActivity() {
         if (mail != incorrectEntry && password != incorrectEntry) {
             createIntentMainActivity(mail)
         }
-        createIntentMainActivity(mail)
     }
 
     private fun createIntentMainActivity(mail: String) {

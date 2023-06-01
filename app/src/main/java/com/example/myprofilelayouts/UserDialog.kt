@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
-import androidx.constraintlayout.widget.ConstraintLayout
+import android.widget.ImageView
 import androidx.fragment.app.DialogFragment
 import com.example.myprofilelayouts.model.User
 
@@ -31,7 +31,8 @@ class UserDialog : DialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setupClickListeners(view)
+        setupClickListenersSave(view)
+        setupClickListenersBack(view)
     }
 
     override fun getTheme(): Int {
@@ -46,13 +47,13 @@ class UserDialog : DialogFragment() {
         )
     }
 
-    private fun setupClickListeners(view: View) {
-        val button: Button = view.findViewById(R.id.save)
-        button.setOnClickListener {
-            val photoEditText: EditText? = dialog?.findViewById(R.id.user_name_text)
+    private fun setupClickListenersSave(view: View) {
+        val save: Button = view.findViewById(R.id.save)
+        save.setOnClickListener {
+            val photoEditText: EditText? = dialog?.findViewById(R.id.email_text)
             val nameEditText: EditText? = dialog?.findViewById(R.id.user_name_text)
-            val professionEditText: EditText? = dialog?.findViewById(R.id.user_name_text)
-            val addressEditText: EditText? = dialog?.findViewById(R.id.user_name_text)
+            val professionEditText: EditText? = dialog?.findViewById(R.id.career_text)
+            val addressEditText: EditText? = dialog?.findViewById(R.id.address_text)
 
             val user = User(
                 id = null,
@@ -62,6 +63,13 @@ class UserDialog : DialogFragment() {
                 address = addressEditText?.text.toString()
             )
             userRepository.addUser(user)
+            dismiss()
+        }
+    }
+
+    private fun setupClickListenersBack(view: View) {
+        val back: ImageView = view.findViewById(R.id.back)
+        back.setOnClickListener{
             dismiss()
         }
     }

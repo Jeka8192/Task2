@@ -25,6 +25,9 @@ class RecyclerViewActivity : AppCompatActivity() {
         binding.addContacts.setOnClickListener() {
             addContacts()
         }
+        binding.arrowBack.setOnClickListener() {
+            finish()
+        }
 
         adapter = UsersAdapter(userRepository.getUsers())
 
