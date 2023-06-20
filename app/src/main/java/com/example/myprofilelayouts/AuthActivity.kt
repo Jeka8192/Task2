@@ -2,7 +2,6 @@ package com.example.myprofilelayouts
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myprofilelayouts.databinding.ActivityAuthBinding
 
