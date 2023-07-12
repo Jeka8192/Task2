@@ -1,8 +1,10 @@
-package com.example.myprofilelayouts
+package com.example.myprofilelayouts.ui.main
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myprofilelayouts.R
+import com.example.myprofilelayouts.ui.contacts.ContactsActivity
 import com.example.myprofilelayouts.databinding.ActivityMainBinding
 import java.util.*
 
@@ -55,7 +57,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun contacts() {
-        val intent = Intent(this, RecyclerViewActivity::class.java)
+        val intent = Intent(this, ContactsActivity::class.java)
         startActivity(intent)
         overridePendingTransition(R.anim.right, R.anim.left)
     }

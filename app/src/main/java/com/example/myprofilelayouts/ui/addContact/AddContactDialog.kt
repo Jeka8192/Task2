@@ -1,4 +1,4 @@
-package com.example.myprofilelayouts
+package com.example.myprofilelayouts.ui.addContact
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,15 +9,18 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.viewModels
+import com.example.myprofilelayouts.R
 import com.example.myprofilelayouts.model.User
+import kotlin.random.Random
 
-class UserDialog : DialogFragment() {
-    private val userRepository = UserRepository.get()
+class AddContactDialog : DialogFragment() {
+    private val addContactViewModel: AddContactViewModel by viewModels()
 
     companion object {
         const val TAG = "UserDialog"
-        fun newInstance(): UserDialog {
-            return UserDialog()
+        fun newInstance(): AddContactDialog {
+            return AddContactDialog()
         }
     }
 
@@ -55,21 +58,22 @@ class UserDialog : DialogFragment() {
             val professionEditText: EditText? = dialog?.findViewById(R.id.career_text)
             val addressEditText: EditText? = dialog?.findViewById(R.id.address_text)
 
-            val user = User(
-                id = null,
-                photo = photoEditText?.text.toString(),
-                name = nameEditText?.text.toString(),
-                profession = professionEditText?.text.toString(),
-                address = addressEditText?.text.toString()
+            addContactViewModel.addUser(
+                User(
+                    id = Random.nextInt(Int.MAX_VALUE), // todo refactor me
+                    photo = photoEditText?.text.toString(),
+                    name = nameEditText?.text.toString(),
+                    profession = professionEditText?.text.toString(),
+                    address = addressEditText?.text.toString()
+                )
             )
-            userRepository.addUser(user)
             dismiss()
         }
     }
 
     private fun setupClickListenersBack(view: View) {
         val back: ImageView = view.findViewById(R.id.back)
-        back.setOnClickListener{
+        back.setOnClickListener {
             dismiss()
         }
     }

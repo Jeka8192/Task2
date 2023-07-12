@@ -1,4 +1,4 @@
-package com.example.myprofilelayouts.database
+package com.example.myprofilelayouts.data.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

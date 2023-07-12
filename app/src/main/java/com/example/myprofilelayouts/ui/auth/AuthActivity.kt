@@ -1,8 +1,11 @@
-package com.example.myprofilelayouts
+package com.example.myprofilelayouts.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myprofilelayouts.ui.main.MAIL_KEY
+import com.example.myprofilelayouts.ui.main.MainActivity
+import com.example.myprofilelayouts.R
 import com.example.myprofilelayouts.databinding.ActivityAuthBinding
 
 private const val incorrectEntry: String = "Incorrect entry"

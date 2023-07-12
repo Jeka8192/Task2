@@ -1,12 +1,12 @@
 package com.example.myprofilelayouts
 
 import android.app.Application
+import com.example.myprofilelayouts.data.UserRepository
 
-class DatabaseInitializer : Application() {
+class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
         UserRepository.initialize(this)
-        CreateUsers()
     }
 }

@@ -1,4 +1,4 @@
-package com.example.myprofilelayouts.customview
+package com.example.myprofilelayouts.ui.customview
 
 import android.annotation.SuppressLint
 import android.content.Context
